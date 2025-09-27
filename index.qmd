@@ -237,6 +237,4 @@ Este trabalho demonstrou a importância de ferramentas especializadas no ecossis
 
 A combinação de boas práticas de visualização com técnicas de aceleração computacional permite que cientistas de dados trabalhem de forma mais eficiente e resolvam problemas mais complexos.
 
-```bash
-quarto render index.qmd
-```
+
