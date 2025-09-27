@@ -18,13 +18,13 @@ Este trabalho explora duas ferramentas fundamentais do ecossistema Python para c
 
 Matplotlib é a biblioteca de plotagem mais consolidada em Python, oferecendo controle detalhado sobre todos os aspectos dos gráficos. Plotnine implementa a Gramática de Gráficos inspirada no ggplot2 do R, proporcionando uma sintaxe mais intuitiva e declarativa. Numba é um compilador JIT (Just-In-Time) que acelera significativamente funções NumPy e Python puro através de decoradores simples.
 
-## Parte 1 - Plotagem em Python
+# Parte 1 - Plotagem em Python
 
 -   **Iris dataset**: Clássico conjunto de dados com medidas de pétalas e sépalas de três espécies de íris
 
 -   **Tips dataset**: Dados de gorjetas de um restaurante
 
-### - 5**Matplotlib**
+## **Matplotlib**
 
 ``` py
 import matplotlib.pyplot as plt
@@ -68,7 +68,7 @@ plt.show()
 
 ![Boxplot Iris Matplotlib](imagens/matplot_boxplot.png){width="600"}
 
-### - **Plotnine**
+## **Plotnine**
 
 ``` py
 from plotnine import ggplot, aes, geom_point, labs, theme_bw, theme, geom_boxplot
@@ -108,7 +108,7 @@ grafico2 = (
 
 ![Boxplot Iris](imagens/grafico2.png){width="600"}
 
-### Comparação entre Matplotlib e Plotnine
+## Comparação entre Matplotlib e Plotnine
 
 **Diferenças de Sintaxe:**
 
@@ -128,9 +128,9 @@ grafico2 = (
 
 -   Plotnine oferece maior produtividade para gráficos estatísticos padrão
 
-## Parte 2 - Numba
+# Parte 2 - Numba
 
-### Implementação do método de Monte Carlo para aproximação de π.
+## Implementação do método de Monte Carlo para aproximação de π.
 
 ``` py
 import random
@@ -195,7 +195,7 @@ print(f"Tempo Numba (execuções seguintes): {numba_time_second:.4f} segundos")
 print(f"Speedup (execuções seguintes): {python_time/numba_time_second:.2f}x")
 ```
 
-### Resultados com comparação
+## Resultados com comparação
 
 ``` bash
 Valor real de π: 3.141592653589793
@@ -209,7 +209,7 @@ Tempo Numba (execuções seguintes): 0.1711 segundos
 Speedup (execuções seguintes): 28.26x
 ```
 
-### Análise dos Resultados
+##   Análise dos Resultados
 
 O Numba proporcionou um speedup de aproximadamente 66x na execução do algoritmo de Monte Carlo. Algumas observações importantes:
 
@@ -219,11 +219,11 @@ O Numba proporcionou um speedup de aproximadamente 66x na execução do algoritm
 
 -   **Precisão:** Ambas as implementações produzem resultados equivalentes em termos de precisão
 
-## Conclusão
+# Conclusão
 
 Este trabalho demonstrou a importância de ferramentas especializadas no ecossistema Python para ciência de dados.
 
-**Principais pontos:**
+## **Principais pontos:**
 
 1.  **Visualização**: Tanto matplotlib quanto plotnine são ferramentas poderosas, cada uma com suas vantagens específicas. A escolha depende do contexto: matplotlib para controle máximo, plotnine para produtividade em análises estatísticas.
 
@@ -241,4 +241,9 @@ Este trabalho demonstrou a importância de ferramentas especializadas no ecossis
 
 A combinação de boas práticas de visualização com técnicas de aceleração computacional permite que cientistas de dados trabalhem de forma mais eficiente e resolvam problemas mais complexos.
 
+# Referências
 
+1.  Documentação oficial do Matplotlib: <https://matplotlib.org/stable/contents.html>
+2.  Documentação oficial do Plotnine: <https://plotnine.readthedocs.io/en/stable/>
+3.  Documentação oficial do Numba: <https://numba.pydata.org/numba-doc/latest/index.html>
+4.  Python Iluminado: <https://pythoniluminado.netlify.app>
