@@ -7,7 +7,7 @@ Este projeto demonstra o uso de ferramentas do ecossistema Python para ciência 
 - `index.qmd`: Documento principal do projeto em Quarto.
 - `index.html`: Versão renderizada do documento.
 - `imagens/`: Pasta com gráficos gerados (`grafico1.png`, `grafico2.png`, `matplot_dispersao.png`, `matplot_boxplot.png`).
-- Scripts Python para geração dos gráficos e testes de desempenho.
+- `codigos/`: Scripts Python para geração dos gráficos e testes de desempenho.
 
 ## Ferramentas Utilizadas
 
