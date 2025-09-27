@@ -64,7 +64,9 @@ plt.show()
 
 ### Resultados:
 
-![Dispersão Iris Matplotlib](matplot_dispersao.png){width="600"} ![Boxplot Iris Matplotlib](matplot_boxplot.png){width="600"}
+![Dispersão Iris Matplotlib](imagens/matplot_dispersao.png){width="600"}
+
+![Boxplot Iris Matplotlib](imagens/matplot_boxplot.png){width="600"}
 
 ### - **Plotnine**
 
@@ -102,7 +104,9 @@ grafico2 = (
 
 ### Resultados:
 
-![Dispersão Iris](grafico1.png){width="600"} ![Boxplot Iris](grafico2.png){width="600"}
+![Dispersão Iris](imagens/grafico1.png){width="600"}
+
+![Boxplot Iris](imagens/grafico2.png){width="600"}
 
 ### Comparação entre Matplotlib e Plotnine
 
