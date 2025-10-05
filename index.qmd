@@ -1,30 +1,34 @@
 ---
-title: "Visualização e Aceleração Computacional em Python."
+title: "Visualização e Aceleração Computacional em Python"
 author: "Leony Heverton Xavier Rodrigues - 20240045200"
 format:
   html:
+    theme: cosmo
     toc: true
     toc-location: right
+    toc-float: true
     toc-title: "Índice"
     number-sections: true
-    theme: cosmo
     css: styles.css
 editor: visual
 ---
 
+
 # Introdução
 
-Este trabalho explora duas ferramentas fundamentais do ecossistema Python para ciência de dados: matplotlib/plotnine para visualização e numba para aceleração computacional. A visualização eficiente é crucial para análise exploratória de dados, enquanto a aceleração computacional permite lidar com problemas complexos que demandam alto poder de processamento.
+Este trabalho mostra duas ferramentas controladoras de alto nível para o ecossistema de ciências de dados do Python: matplotlib/plotnine – controle controlador e numba – controle de aceleração. A visualização controladora é essencial para a análise analítica exploratória e o controle de aceleração é essencial para lidar com modelos complexos que requerem controle de CPU.
 
-Matplotlib é a biblioteca de plotagem mais consolidada em Python, oferecendo controle detalhado sobre todos os aspectos dos gráficos. Plotnine implementa a Gramática de Gráficos inspirada no ggplot2 do R, proporcionando uma sintaxe mais intuitiva e declarativa. Numba é um compilador JIT (Just-In-Time) que acelera significativamente funções NumPy e Python puro através de decoradores simples.
+O matplotlib é controlador de plotagem e traço de núcleo central para o Python. É uma biblioteca de plotagem 2D gratificantemente projetado para produzir produtos gráficos de excelente qualidade em muitos formatos de produtos finais integrados em textos, e o trabalho é produzido interativamente em notebooks de sessões. Ele fornece controle para o estilo cuidadoso em cada linha, fonte, tamanho, cores e Esmaecer, e muitos homens são transportados como produtos de saída.
+
+Por parte, o plotnine é um geométrico visual condutor e gramática de controle baseado no R ggplot2. Ele é construído para comparar o que graficar o que define, oferecendo controle mais conveniente e informativo do que os produtos de gravata matplotlib. Simples numba é um compilador JIT para funções e módulos NumPy e Python puros.
 
 # Parte 1 - Plotagem em Python
 
--   **Iris dataset**: Clássico conjunto de dados com medidas de pétalas e sépalas de três espécies de íris
+## Iris dataset
 
--   **Tips dataset**: Dados de gorjetas de um restaurante
+Clássico conjunto de dados com medidas de pétalas e sépalas de três espécies de íris
 
-## **Matplotlib**
+### Matplotlib
 
 ``` py
 import matplotlib.pyplot as plt
@@ -68,7 +72,7 @@ plt.show()
 
 ![Boxplot Iris Matplotlib](imagens/matplot_boxplot.png){width="600"}
 
-## **Plotnine**
+### Plotnine
 
 ``` py
 from plotnine import ggplot, aes, geom_point, labs, theme_bw, theme, geom_boxplot
@@ -112,21 +116,21 @@ grafico2 = (
 
 **Diferenças de Sintaxe:**
 
--   **Matplotlib**: Abordagem imperativa, controlando cada elemento do gráfico individualmente
+-   **Matplotlib**: Abordagem imperativa, controlando cada elemento do gráfico de forma individual.
 
--   **Plotnine**: Abordagem declarativa, construindo gráficos por camadas (similar ao ggplot2 do R)
+-   **Plotnine**: Abordagem declarativa, construindo gráficos por camadas (similar ao ggplot2 do R).
 
 **Diferenças de Estilo:**
 
--   **Matplotlib**: Maior controle sobre detalhes, mas requer mais código para personalizações
+-   **Matplotlib**: Maior controle sobre detalhes, mas requer mais código para personalizações.
 
--   **Plotnine**: Sintaxe mais concisa e intuitiva, temas pré-definidos consistentes
+-   **Plotnine**: Sintaxe mais concisa e intuitiva, temas pré-definidos consistentes.
 
 **Vantagens de cada abordagem:**
 
--   Matplotlib é mais flexível para gráficos customizados complexos
+-   Matplotlib é mais flexível para gráficos customizados complexos.
 
--   Plotnine oferece maior produtividade para gráficos estatísticos padrão
+-   Plotnine oferece maior produtividade para gráficos estatísticos padrão.
 
 # Parte 2 - Numba
 
@@ -195,7 +199,7 @@ print(f"Tempo Numba (execuções seguintes): {numba_time_second:.4f} segundos")
 print(f"Speedup (execuções seguintes): {python_time/numba_time_second:.2f}x")
 ```
 
-## Resultados com comparação
+### Resultados com comparação
 
 ``` bash
 Valor real de π: 3.141592653589793
@@ -209,25 +213,26 @@ Tempo Numba (execuções seguintes): 0.1711 segundos
 Speedup (execuções seguintes): 28.26x
 ```
 
-##   Análise dos Resultados
+### Análise dos Resultados
 
 O Numba proporcionou um speedup de aproximadamente 66x na execução do algoritmo de Monte Carlo. Algumas observações importantes:
 
--   **Compilação JIT:** A primeira execução com Numba inclui o tempo de compilação, mas ainda é significativamente mais rápida que Python puro
+-   **Compilação JIT:** A primeira execução com Numba inclui o tempo de compilação, mas ainda é significativamente mais rápida que Python puro.
 
--   **Execuções subsequentes:** Após a compilação, o código executa em tempo extremamente reduzido
+-   **Execuções subsequentes:** Após a compilação, o código executa em tempo extremamente reduzido.
 
--   **Precisão:** Ambas as implementações produzem resultados equivalentes em termos de precisão
+-   **Precisão:** Ambas as implementações produzem resultados equivalentes em termos de precisão.
 
 # Conclusão
 
-Este trabalho demonstrou a importância de ferramentas especializadas no ecossistema Python para ciência de dados.
+Neste trabalho, foi apresentada a importância de ferramentas especializadas do ecossistema Python para ciência de dados.
 
-## **Principais pontos:**
+## Principais pontos
 
-1.  **Visualização**: Tanto matplotlib quanto plotnine são ferramentas poderosas, cada uma com suas vantagens específicas. A escolha depende do contexto: matplotlib para controle máximo, plotnine para produtividade em análises estatísticas.
+1.  **Visualização**: o matplotlib e o plotnine em particular são ferramentas indispensáveis para cada cientista de dados. Ambos são úteis em diferentes situações: o primeiro é melhor para controle detalhado e personalizado, enquanto o outro é muito mais produtivo ao trabalhar com análises estatísticas.
 
-2.  **Aceleração computacional**: Numba mostrou-se extremamente eficaz para acelerar loops e operações numéricas, com ganhos de desempenho da ordem de 60x ou mais com modificações mínimas no código.
+
+2.  **Aceleração computacional**: com a Numba, a aceleração dos loops e operações numéricas pode ser facilmente acelerada em uma ordem de magnitude. Este é o aspecto mais importante, uma vez que essa técnica pode permitir manipulações de dados consideradas-inconvenientes, como loops, emparelhamento atômico e assim por diante. Com ganhos de desempenho da ordem de 60x ou mais com modificações mínimas no código.
 
 3.  **Aplicações práticas**: Estas ferramentas são essenciais para:
 
