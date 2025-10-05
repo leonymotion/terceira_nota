@@ -16,11 +16,9 @@ editor: visual
 
 # Introdução
 
-Este trabalho mostra duas ferramentas controladoras de alto nível para o ecossistema de ciências de dados do Python: matplotlib/plotnine – controle controlador e numba – controle de aceleração. A visualização controladora é essencial para a análise analítica exploratória e o controle de aceleração é essencial para lidar com modelos complexos que requerem controle de CPU.
+Este trabalho explora duas ferramentas fundamentais do ecossistema Python para ciência de dados: matplotlib/plotnine para visualização e numba para aceleração computacional. A visualização eficiente é crucial para análise exploratória de dados, enquanto a aceleração computacional permite lidar com problemas complexos que demandam alto poder de processamento.
 
-O matplotlib é controlador de plotagem e traço de núcleo central para o Python. É uma biblioteca de plotagem 2D gratificantemente projetado para produzir produtos gráficos de excelente qualidade em muitos formatos de produtos finais integrados em textos, e o trabalho é produzido interativamente em notebooks de sessões. Ele fornece controle para o estilo cuidadoso em cada linha, fonte, tamanho, cores e Esmaecer, e muitos homens são transportados como produtos de saída.
-
-Por parte, o plotnine é um geométrico visual condutor e gramática de controle baseado no R ggplot2. Ele é construído para comparar o que graficar o que define, oferecendo controle mais conveniente e informativo do que os produtos de gravata matplotlib. Simples numba é um compilador JIT para funções e módulos NumPy e Python puros.
+Matplotlib é a biblioteca de plotagem mais consolidada em Python, oferecendo controle detalhado sobre todos os aspectos dos gráficos. Plotnine implementa a Gramática de Gráficos inspirada no ggplot2 do R, proporcionando uma sintaxe mais intuitiva e declarativa. Numba é um compilador JIT (Just-In-Time) que acelera significativamente funções NumPy e Python puro através de decoradores simples.
 
 # Parte 1 - Plotagem em Python
 
@@ -232,7 +230,7 @@ Neste trabalho, foi apresentada a importância de ferramentas especializadas do 
 1.  **Visualização**: o matplotlib e o plotnine em particular são ferramentas indispensáveis para cada cientista de dados. Ambos são úteis em diferentes situações: o primeiro é melhor para controle detalhado e personalizado, enquanto o outro é muito mais produtivo ao trabalhar com análises estatísticas.
 
 
-2.  **Aceleração computacional**: com a Numba, a aceleração dos loops e operações numéricas pode ser facilmente acelerada em uma ordem de magnitude. Este é o aspecto mais importante, uma vez que essa técnica pode permitir manipulações de dados consideradas-inconvenientes, como loops, emparelhamento atômico e assim por diante. Com ganhos de desempenho da ordem de 60x ou mais com modificações mínimas no código.
+2.  **Aceleração computacional**: com a Numba, a aceleração dos loops e operações numéricas pode ser facilmente acelerada em uma ordem de magnitude. Este é o aspecto mais importante, uma vez que essa técnica pode permitir manipulações de dados consideradas inconvenientes, como loops, emparelhamento atômico e assim por diante. Com ganhos de desempenho da ordem de 60x ou mais com modificações mínimas no código.
 
 3.  **Aplicações práticas**: Estas ferramentas são essenciais para:
 
