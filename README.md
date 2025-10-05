@@ -1,5 +1,7 @@
 # Visualização e Aceleração Computacional em Python
 
+Para vizualização do conteudo, você pode acessar o site: https://leonymotion.github.io/terceira_nota
+
 Este projeto demonstra o uso de ferramentas do ecossistema Python para ciência de dados, incluindo visualização de dados com Matplotlib e Plotnine, e aceleração computacional com Numba.
 
 ## Estrutura
